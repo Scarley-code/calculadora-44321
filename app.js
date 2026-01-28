@@ -26,10 +26,18 @@ function multiplicar(num1, num2) {
 console.log(multiplicar(6, 4));
 
 // División
-function dividir(num1, num2) {
-    let division = (num1 / num2);
-    let resultado = "El resultado de la division es " + division;
+function dividir() {
+    let division = 0;
+    let resultado;
+    let num1 = 6
+    let num2 = 4
+    if (num2 == 0) {
+        resultado = "No se puede dividir entre cero";
+    } else {
+        division = (num1 / num2);
+        resultado = "El resultado de la division es " + division;
+    }
     return resultado;
 }
 
-console.log(dividir(6, 4));
+console.log(dividir());
